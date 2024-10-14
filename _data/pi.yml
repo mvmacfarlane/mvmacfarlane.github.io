@@ -1,17 +1,18 @@
-- name: Dr. Richard Feynman
+- name: Matthew Macfarlane
   photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
-  github: https://github.com/
-  researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
-  cv: cv/cv.pdf
+  info: PhD Candidate, University of Amsterdam
+  email: m.v.macfarlane@uva.nl
+  github: https://github.com/mvmacfarlane
+  researchgate: https://www.researchgate.net/profile/Matthew-Macfarlane
+  scholar: https://scholar.google.com/citations?user=XXXXXX
+  cv: cv/macfarlane_cv.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "(2021-Present) Ph.D. Artificial Intelligence, University of Amsterdam",
+      "(2020) M.Sc. Artificial Intelligence (Distinction), University of St Andrews",
+      "(2017) B.Sc. Mathematics with Economics (First Class), London School of Economics",
     ]
 
   educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+    ["(2021-Present) Ph.D. AI, University of Amsterdam", "(2020) M.Sc. AI, St Andrews", "(2017) B.Sc. Math with Econ, LSE"]
