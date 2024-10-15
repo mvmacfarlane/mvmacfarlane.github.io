@@ -3,7 +3,6 @@
   info: PhD Candidate, University of Amsterdam
   email: m.v.macfarlane@uva.nl
   github: https://github.com/mvmacfarlane
-  researchgate: https://www.researchgate.net/profile/Matthew-Macfarlane
   scholar: https://scholar.google.com/citations?user=XXXXXX
   cv: cv/macfarlane_cv.pdf
   # Change the items in "education" you have (up to 6)
@@ -15,4 +14,4 @@
     ]
 
   educationshort:
-    ["(2021-Present) Ph.D. AI, University of Amsterdam", "(2020) M.Sc. AI, St Andrews", "(2017) B.Sc. Math with Econ, LSE"]
+    ["(2021-Present) Ph.D. AI, University of Amsterdam", "(2020) M.Sc. AI, University of St Andrews", "(2017) B.Sc. Math with Econ, LSE"]
