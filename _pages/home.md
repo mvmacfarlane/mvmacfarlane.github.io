@@ -7,14 +7,15 @@ permalink: /
 
 ### Welcome!
 
-I work on Deep Reinforcement Learning (DRL) and Search, focusing on optimization and control problems. My research revolves around improving the theoretical and practical aspects of reinforcement learning, developing new algorithms for combinatorial optimization, and improving performance in a wide variety of complex decision-making tasks. My work spans across several fields, including multi-task learning and neural architecture optimization.
+Welcome to my personal website. I am a 3rd year PhD student working on Deep Reinforcement Learning and Search, with a focus on solving optimization and control problems. My research explores how to leverage compute efficiently during both training and testing to optimize performance. 
 
-The primary aim of my research is to advance the state of AI by building mathematical models and systems that push the boundaries of what reinforcement learning can achieve in practical scenarios.
+Specifically, I have explored the use of probabilistic inference as a policy improvement operator through my work Sequential Monte Carlo Policy Optimisation, leverging inference during both training and test time. I have also explored meta-learning search processes, treating search itself as an optimization problem. I am currently working on learning latent spaces in Reinforcement Learning in both continuous and discrete settings. In you are interested in any of these topics don't hesitate to reach out for a chat!
+
 
 <br/>
 
 ### About me
 
-I am currently a PhD candidate at the University of Amsterdam, supervised by Dr. Herke van Hoof within the AMlab group. I hold a Master’s in Artificial Intelligence from the University of St Andrews, where I graduated with distinction, and a Bachelor’s degree in Mathematics with Economics from the London School of Economics.
+I am currently a PhD candidate at the University of Amsterdam, supervised by Dr. Herke van Hoof within the AMlab group. I hold a Master’s in Artificial Intelligence from the University of St Andrews and a Bachelor’s degree in Mathematics with Economics from the London School of Economics.
 
-In addition to my academic work, I have gained practical experience through internships in machine learning and artificial intelligence, working with companies such as InstaDeep on scalable AI solutions. My work has been accepted at top-tier conferences such as NeurIPS and ICML.
+I have gained practical experience through internships working with companies such as InstaDeep and the startup Techspert. My work has been accepted at top-tier conferences such as NeurIPS and ICML. I also have experience working in asset management, having started my career as a quant in the multi-asset team at Aberdeen Standard Investments.

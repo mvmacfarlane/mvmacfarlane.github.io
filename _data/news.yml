@@ -1,8 +1,14 @@
-
-
 - date: October 2024
   headline: "SPO: Sequential Monte Carlo Policy Optimization accepted to NeurIPS 2024, Vancouver"
 
-
 - date: September 1, 2024
-  headline: "Started research visit at University of Alberta to work with Dr Levi Lelis"
+  headline: "Started research visit at University of Alberta to work with Dr. Levi Lelis"
+
+- date: January 2024
+  headline: "Co-author for Jumanji paper accepted to ICLR 2024, working on accelerated JAX-based environments"
+
+- date: April 2023
+  headline: "Started a research internship at Instadeep, London"
+
+- date: December 2022
+  headline: "Presenting Training Graph Neural Networks with Policy Gradients to Perform Tree Search at NeurIPS, New Orleans"

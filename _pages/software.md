@@ -1,5 +1,5 @@
 ---
-title: "Software"
+title: "Open Source Software"
 layout: gridlay
 sitemap: false
 permalink: /software/
@@ -34,21 +34,51 @@ iframe {
 }
 </style>
 
-## Software
+
+
+
+
+
+
+
+## Open Source Software
 
 <div class="jumbotron">
 <div class="row align-items-end">
 <div class="col-md-12 col-sm-12">
-<h4><b>Example Software</b></h4>
-<a href="https://example.com" target="_blank"><button class="btn btn-success btn-sm">WEBSITE</button></a>
-<a href="https://github.com" target="_blank"><button class="btn btn-info btn-sm">GIT</button></a>
-<a href="{{ site.url }}{{ site.baseurl }}/papers/example_proceeding.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
+<h4><b>Jumanji: Reinforcement Learning Environments in JAX</b></h4>
+<a href="https://github.com/instadeepai/jumanji" target="_blank"><button class="btn btn-success btn-sm">GITHUB</button></a>
+<a href="https://arxiv.org/abs/2306.09884" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a>
 
 <b>Authors:</b>
-<i>Example authors</i>
+<i>Clément Bonnet et al.</i>
 
-Example software description.
+Jumanji is a diverse suite of scalable reinforcement learning environments written in JAX. It features 22 environments, ranging from simple games to NP-hard combinatorial problems, enabling faster iteration and large-scale experimentation in RL research. 
 
+<b>Contribution:</b> I contributed to the development of the Sokoban environment, one of the routing challenges featured in the Jumanji suite.
+
+<div style="text-align:center;">
+  <img src="{{ site.url }}/assets/images/sokoban.gif" alt="Sokoban environment GIF" width="300px" />
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-12 col-sm-12">
+<h4><b>Flashbax: Accelerated Replay Buffers in JAX</b></h4>
+<a href="https://github.com/instadeepai/flashbax" target="_blank"><button class="btn btn-success btn-sm">GITHUB</button></a>
+<a href="https://github.com/instadeepai/flashbax/" target="_blank"><button class="btn btn-info btn-sm">DOCUMENTATION</button></a>
+
+<b>Authors:</b>
+<i>Edan Toledo et al.</i>
+
+Flashbax is a library designed to streamline the use of experience replay buffers within reinforcement learning. It provides efficient buffer implementations like Flat, Trajectory, and Prioritized Buffers, tailored for JAX-based environments.
+
+<b>Contribution:</b> I contributed to the development and design of the buffer library during my internship at InstaDeep.
 </div>
 </div>
 </div>
