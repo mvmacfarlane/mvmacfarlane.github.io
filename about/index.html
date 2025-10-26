@@ -84,20 +84,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-sm-8 col-xs-12">
       <h3>Matthew Macfarlane</h3>
       <h4><i>Research Scientist, Lila Sciences</i></h4>
-      <p><a href="mailto:matthew.v.m@live.co.uk" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> 
-   <a href="/cv/macfarlane_cv.pdf" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a> 
-   <a href="https://scholar.google.com/citations?user=XXXXXX" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a> 
-   <a href="https://github.com/mvmacfarlane" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></p>
+      <div id="social-links">
+        <!-- Social links will be loaded from content/social_links.md -->
+      </div>
 
-      <ul style="overflow: hidden">
-    
-      <li>(2021&#8211;Present) Ph.D. Artificial Intelligence, University of Amsterdam</li>
-    
-      <li>(2020) M.Sc. Artificial Intelligence (Distinction), University of St Andrews</li>
-    
-      <li>(2017) B.Sc. Mathematics with Economics (First Class), London School of Economics</li>
-    
-  </ul>
+      <div id="timeline-content">
+        <!-- Timeline will be loaded from content/timeline.md -->
+      </div>
 
     </div>
   </div>
@@ -116,25 +109,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	  <div class="row">
 		<div class="col-sm-4">
 		    <h5>About</h5>	
-            <p>Matthew Macfarlane<br/> Research Scientist<br/> Lila Sciences
-</p>
+            <p id="footer-about">
+            <!-- Content will be loaded from content/footer_about.md -->
+            </p>
 		</div>
 
 		<div class="col-sm-4">
 		    <h5>Contact</h5>	
-            <p><a href="mailto:matthew.v.m@live.co.uk" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Matthew via email</a> <br/> <a href="https://github.com/mvmacfarlane"><i class="fa fa-github fa-1x"></i> Visit my GitHub</a>
-</p>
+            <p id="footer-contact">
+            <!-- Content will be loaded from content/footer_contact.md -->
+            </p>
 		</div>
 
 	  </div>
 
-      <center><p>&copy 2024 Matthew Macfarlane </p></center>
+      <center><p id="copyright">
+      <!-- Content will be loaded from content/copyright.md -->
+      </p></center>
 	</div>
   </div>
 </div>
 
 <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
 
+<!-- Content Loading Script -->
+<script src="/assets/js/content-loader.js"></script>
 
   </body>
 
