@@ -74,19 +74,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid">
       <div class="row">
           <div id="homeid" class="col-sm-7 col-xs-12">
-	<h3 id="welcome">Welcome!</h3>
+	<div id="welcome-content">
+		<!-- Content will be loaded from content/welcome.md -->
+	</div>
 
-<p>I am a Research Scientist at Lila Sciences. My research focuses on Open Ended Learning, Reinforcement Learning and Search.</p>
-
-<p>My work includes Sequential Monte Carlo Policy Optimisation, meta-learning search processes, Searching Latent Program Spaces, and learning latent spaces in Reinforcement Learning. I'm always happy to discuss these topics!</p>
-
-<p><br /></p>
-
-<h3 id="about-me">About me</h3>
-
-<p>I hold a Master's in Artificial Intelligence from the University of St Andrews and a Bachelor's in Mathematics with Economics from the London School of Economics. I've worked as a Research Scientist at Lila Sciences and completed my PhD at the University of Amsterdam under Dr. Herke van Hoof.</p>
-
-<p>I have industry experience through internships at Microsoft, InstaDeep, and Techspert. My research has been published at top-tier conferences including NeurIPS and ICML. I also have experience in asset management as a quant at Aberdeen Standard Investments.</p>
+	<div id="about-content">
+		<!-- Content will be loaded from content/about.md -->
+	</div>
 
   </div>
   
@@ -97,56 +91,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <center>
    <a href="/about"><img src="/images/headshot.jpg" width="60%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
    <h4>Matthew Macfarlane</h4>
-   <div style="margin-bottom:5px">
-   <a href="mailto:matthew.v.m@live.co.uk" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> 
-    <a href="/cv/macfarlane_cv.pdf" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a> 
-    <a href="https://scholar.google.com/citations?user=XXXXXX" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a> 
-    <a href="https://github.com/mvmacfarlane" target="_blank"><i class="fa fa-github-square fa-3x"></i></a> 
+   <div style="margin-bottom:5px" id="social-links">
+   <!-- Social links will be loaded from content/social_links.md -->
+   </div>
   </center>
 
-  <ul style="overflow: hidden">
-    
-      <li>(2025&#8211;Present) Research Scientist, Lila Sciences</li>
-      <li>(2021&#8211;2025) Ph.D. AI, University of Amsterdam</li>
-    
-      <li>(2020) M.Sc. AI, University of St Andrews</li>
-    
-      <li>(2017) B.Sc. Math with Econ, LSE</li>
-    
-  </ul>
+  <div id="timeline-content">
+    <!-- Content will be loaded from content/timeline.md -->
+  </div>
 
 </div>
 
 </div>
 
 <div class="jumbotron">
-  <h4>News</h4>
-
- 
-  <b>October 2025</b>
-    <p>Searching Latent Program Spaces accepted to NeurIPS 2025, San Diego</p>
-
-  <b>May 2025</b>
-    <p>Searching Latent Program Spaces received an oral presentation at ICML 2025, Vancouver</p>
-
-  <b>April 2025</b>
-    <p>Started an internship at Microsoft working on Parallel Reasoning at Microsoft Montreal</p>
-
-  <b>November 2024</b>
-    <p>Searching Latent Program Spaces received a 3rd place paper award from the ARC-AGI prize</p>
-
-  <b>October 2024</b>
-    <p>SPO: Sequential Monte Carlo Policy Optimization accepted to NeurIPS 2024, Vancouver</p>
-  
-  <b>September 1, 2024</b>
-    <p>Started research visit at University of Alberta to work with Dr. Levi Lelis</p>
-  
-  <b>January 2024</b>
-    <p>Co-author for Jumanji paper accepted to ICLR 2024, working on accelerated JAX-based environments</p>
-  
+  <div id="news-content">
+    <!-- Content will be loaded from content/news.md -->
+  </div>
   
   <h5><a href="/allnews.html">... see all News</a></h5>
-
 </div>
 
   </div>
@@ -161,25 +124,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	  <div class="row">
 		<div class="col-sm-4">
 		    <h5>About</h5>	
-            <p>Matthew Macfarlane<br/> Research Scientist<br/> Lila Sciences
-</p>
+            <p id="footer-about">
+            <!-- Content will be loaded from content/footer_about.md -->
+            </p>
 		</div>
 
 		<div class="col-sm-4">
 		    <h5>Contact</h5>	
-            <p><a href="mailto:matthew.v.m@live.co.uk" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Matthew via email</a> <br/> <a href="https://github.com/mvmacfarlane"><i class="fa fa-github fa-1x"></i> Visit my GitHub</a>
-</p>
+            <p id="footer-contact">
+            <!-- Content will be loaded from content/footer_contact.md -->
+            </p>
 		</div>
 
 	  </div>
 
-      <center><p>&copy 2024 Matthew Macfarlane </p></center>
+      <center><p id="copyright">
+      <!-- Content will be loaded from content/copyright.md -->
+      </p></center>
 	</div>
   </div>
 </div>
 
 <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
 
+<!-- Content Loading Script -->
+<script src="/assets/js/content-loader.js"></script>
+<script>
+// Load homepage-specific content
+async function loadHomepageContent() {
+    try {
+        // Load news content (homepage version)
+        const newsResponse = await fetch('/content/news_homepage.md');
+        const newsText = await newsResponse.text();
+        document.getElementById('news-content').innerHTML = markdownToHtml(newsText);
+    } catch (error) {
+        console.error('Error loading homepage content:', error);
+    }
+}
+
+// Load content when page loads
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadContent();
+    await loadHomepageContent();
+});
+</script>
 
   </body>
 

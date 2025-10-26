@@ -1,0 +1,4 @@
+- (2025–Present) Research Scientist, Lila Sciences
+- (2021–2025) Ph.D. AI, University of Amsterdam
+- (2020) M.Sc. AI, University of St Andrews
+- (2017) B.Sc. Math with Econ, LSE
